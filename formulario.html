@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Agencia de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="imagen" src="logo.png" alt="Logo">      
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contactForm">
+            <h1>Contacta con Nosotros</h1>
+             <form id="formulario" action="submit_form.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/tucuenta" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+                <span>Instagram</span> 
+            </a>
+            <a href="https://www.facebook.com/tucuenta" target="_blank">
+                <img src="facebook.png" alt="Facebook">
+                <span>Facebook</span> 
+            </a>
+            <a href="https://twitter.com/tucuenta" target="_blank">
+                <img src="twitter.png" alt="Twitter">
+                <span>Twitter</span> 
+            </a>
+        </div>
+    </footer> 
+    <script src="form.js"></script>
+</body>
+</html>
