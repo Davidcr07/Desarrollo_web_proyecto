@@ -19,3 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
         form.reset();
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var carousels = document.querySelectorAll('.carousel');
+
+    carousels.forEach(function (carousel) {
+        new bootstrap.Carousel(carousel, {
+            interval: 5000, 
+            pause: 'hover' 
+        });
+    });
+});
